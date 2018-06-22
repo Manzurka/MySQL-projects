@@ -1,0 +1,24 @@
+Open MySQL Workbench.
+New Connection MySQL Workbench
+Click New Connection towards the bottom left of MySQL Workbench. 
+In the "Set up a New Connection Dialogue" box, Type your Database connection credentials. The credentials will be like the following:
+Connection Name: My Server
+Connection Method: Standard (TCP/IP).
+Hostname: domain/cPanel IP address: 127.0.0.1
+Port: 3306
+Username: ---
+Password: ---
+Default Schema: blank.
+Click Test Connection.
+Enter password MySQL Workbench
+Click Ok.
+MySQL Workbench should say "Connection parameters are correct". Click Ok. 
+Click Ok again to accept the connection settings. 
+Open downloaded sql file. Copy the content
+Open Connetion MySQL Workbench
+Now under the SQL Development section you will see your connection listed in the Open Connection to Start Querying box. Click your newly created account. Paste the copied content. 
+Click on Execute button. Now you will see the databases list in the area on the left. 
+Ensure you clicked on twitter.sql and it is showing in bold.
+to select all data in tweets table enter SELECT * FROM tweets
+to add new tweet from user No2 into tweets table enter NSERT INTO tweets(tweet, id, created_at, updated_at)  VALUES('It was a great game', '2', NOW(), NOW()). The new tweet was added in row 13 with id=13.
+to update this tweet enter UPDATE tweets SET tweet='Hello' WHERE id=13
